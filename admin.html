@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCAS - Administrator Dashboard</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script defer src="js/admin.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>🏫 SCAS</h2>
+
+            <p>Administrator</p>
+
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">🏠 Dashboard</li>
+
+            <li>👥 User Management</li>
+
+            <li>📅 Today's Timetable</li>
+
+            <li>📝 Exam Timetable</li>
+
+            <li>🎉 Special Events</li>
+
+            <li>📢 Daily Notice Board</li>
+
+            <li>👨‍🏫 Teacher Allotment</li>
+
+            <li>🏖 Teacher Leave</li>
+
+            <li>🔔 Notifications</li>
+
+            <li>📊 Reports</li>
+
+            <li>⚙ Settings</li>
+
+            <li class="logout">🚪 Logout</li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Area -->
+
+    <main class="main">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>School Communication & Alert System</h1>
+
+                <p>Welcome Administrator</p>
+
+            </div>
+
+            <div class="profile">
+
+                🔔
+
+                👤 Admin
+
+            </div>
+
+        </header>
+
+        <!-- Dashboard Cards -->
+
+        <section class="cards">
+
+            <div class="card">
+
+                <h2 id="usersCount">0</h2>
+
+                <p>Total Users</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2 id="teacherCount">0</h2>
+
+                <p>Teachers</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2 id="coordinatorCount">0</h2>
+
+                <p>Coordinators</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2 id="noticeCount">0</h2>
+
+                <p>Notifications</p>
+
+            </div>
+
+        </section>
+
+        <!-- Recent Activity -->
+
+        <section class="activity">
+
+            <h2>Recent Activities</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Date</th>
+
+                        <th>User</th>
+
+                        <th>Activity</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="activityTable">
+
+                    <tr>
+
+                        <td>--</td>
+
+                        <td>--</td>
+
+                        <td>No Activities Yet</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
